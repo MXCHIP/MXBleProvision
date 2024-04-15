@@ -95,7 +95,7 @@
         [MXBleProvisionManager.sharedInstance stopScan];
         NSString *pk = info[@"productKey"];
         NSString *dn = info[@"deviceName"];
-        [MXBleProvisionManager startProvisionWithType:3 productKey:pk deviceName:dn mac:nil secret:nil httpURL:nil mqttURL:nil delegate:self];
+        [MXBleProvisionManager startProvisionWithType:0 productKey:pk deviceName:dn mac:nil secret:nil httpURL:nil mqttURL:nil delegate:self];
     }
 }
 
