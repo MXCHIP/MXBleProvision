@@ -95,32 +95,38 @@
         [MXBleProvisionManager.sharedInstance stopScan];
         NSString *pk = info[@"productKey"];
         NSString *dn = info[@"deviceName"];
-        [MXBleProvisionManager startProvisionWithType:0 productKey:pk deviceName:dn mac:nil secret:nil httpURL:nil mqttURL:nil delegate:self];
+        
+        NSMutableDictionary *custom = [[NSMutableDictionary alloc] init];
+        custom[@"htturl"] = @"app.api.fogcloud.io";
+        custom[@"mqtturl"] = @"app.mqtt.fogcloud.io";
+        [MXBleProvisionManager startProvisionWithType:3
+                                           productKey:pk
+                                           deviceName:dn
+                                                  mac:nil
+                                               secret:nil
+                                         customParams:custom
+                                             delegate:self];
     }
 }
 
 #pragma  mark -----------------------
 
+//传入Wi-Fi信息
 - (void)inputWifiInfoWithHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))handler
 {
-    handler(@"", @"");
+    handler(@"mxchip-guest", @"12345678");
 }
-- (void)mxBleProvisionProcessWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier step:(NSInteger)step
-{
-    
-}
+//配网结束
 - (void)mxBleProvisionFinishWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier error:(NSError * _Nullable)error device_name:(NSString * _Nullable)device_name
 {
     [MXBleProvisionManager cleanProvisionCache];
     if (error != nil) {
         NSLog(@"失败原因：%@", error);
+    } else {
+        //配网成功
     }
 }
-- (void)requestRandomWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler
-{
-    //返回16长度的字符串，自行生成或者通过云端API生成
-    handler(@"ABCDEFGHIJKLMNAA");
-}
+//请求blekey
 - (void)requestBleKeyWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler
 {
     //返回blekey，调用API云端生成
@@ -129,7 +135,7 @@
 - (void)requestConnectStatusWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(BOOL))handler
 {
     //轮询设备连接状态，调用API返回结果
-    handler(YES);
+    handler(NO);
 }
 
 @end
