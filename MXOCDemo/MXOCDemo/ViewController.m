@@ -95,29 +95,33 @@
         [MXBleProvisionManager.sharedInstance stopScan];
         NSString *pk = info[@"productKey"];
         NSString *dn = info[@"deviceName"];
+        CBPeripheral *peripheral = info[@"peripheral"];
         
-        NSMutableDictionary *custom = [[NSMutableDictionary alloc] init];
-        custom[@"htturl"] = @"app.api.fogcloud.io";
-        custom[@"mqtturl"] = @"app.mqtt.fogcloud.io";
         [MXBleProvisionManager startProvisionWithType:3
+                                           peripheral:peripheral
                                            productKey:pk
-                                           deviceName:dn
-                                                  mac:nil
-                                               secret:nil
-                                         customParams:custom
+                                     deviceIdentifier:dn
+                                            productId:nil
+                                              timeout:30
                                              delegate:self];
     }
 }
 
 #pragma  mark -----------------------
 
-//传入Wi-Fi信息
-- (void)inputWifiInfoWithHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))handler
+- (void)inputWifiInfoWithHandler:(void (^)(NSString * _Nonnull, NSString * _Nonnull, NSDictionary<NSString *,id> * _Nullable))handler
 {
-    handler(@"mxchip-guest", @"12345678");
+    NSMutableDictionary *custom = [[NSMutableDictionary alloc] init];
+    custom[@"htturl"] = @"app.api.fogcloud.io";
+    custom[@"mqtturl"] = @"app.mqtt.fogcloud.io";
+    handler(@"mxchip-guest", @"12345678", custom);
 }
+
 //配网结束
-- (void)mxBleProvisionFinishWithDeviceIdentifier:(NSString * _Nonnull)deviceIdentifier error:(NSError * _Nullable)error device_name:(NSString * _Nullable)device_name
+- (void)mxBleProvisionFinishWithProductKey:(NSString *)productKey
+                          deviceIdentifier:(NSString *)deviceIdentifier
+                                     error:(NSError *)error
+                               device_name:(NSString *)device_name
 {
     [MXBleProvisionManager cleanProvisionCache];
     if (error != nil) {
