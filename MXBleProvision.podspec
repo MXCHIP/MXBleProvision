@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MXBleProvision'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'A short description of MXBleProvision.'
 
   s.description      = "mxchip ble provisioning sdk"
