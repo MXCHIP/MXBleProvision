@@ -830,12 +830,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -2091,7 +2091,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "(any MXBleProvision.MXBleDeviceLogDelegate)?"
+                "printedName": "MXBleProvision.MXBleDeviceLogDelegate?"
               }
             ],
             "declKind": "Var",
@@ -2117,12 +2117,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleDeviceLogDelegate)?",
+                    "printedName": "MXBleProvision.MXBleDeviceLogDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleDeviceLogDelegate",
-                        "printedName": "any MXBleProvision.MXBleDeviceLogDelegate",
+                        "printedName": "MXBleProvision.MXBleDeviceLogDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleDeviceLogDelegate"
                       }
                     ],
@@ -2153,12 +2153,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleDeviceLogDelegate)?",
+                    "printedName": "MXBleProvision.MXBleDeviceLogDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleDeviceLogDelegate",
-                        "printedName": "any MXBleProvision.MXBleDeviceLogDelegate",
+                        "printedName": "MXBleProvision.MXBleDeviceLogDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleDeviceLogDelegate"
                       }
                     ],
@@ -2894,12 +2894,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any MXBleProvision.MXBleDeviceLogDelegate)?",
+                "printedName": "MXBleProvision.MXBleDeviceLogDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXBleDeviceLogDelegate",
-                    "printedName": "any MXBleProvision.MXBleDeviceLogDelegate",
+                    "printedName": "MXBleProvision.MXBleDeviceLogDelegate",
                     "usr": "c:@M@MXBleProvision@objc(pl)MXBleDeviceLogDelegate"
                   }
                 ],
@@ -3069,12 +3069,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -3114,12 +3114,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -3166,12 +3166,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -3262,12 +3262,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -3313,12 +3313,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -3364,12 +3364,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -3741,7 +3741,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?"
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?"
               }
             ],
             "declKind": "Var",
@@ -3767,12 +3767,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleProvisionDelegate",
-                        "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                        "printedName": "MXBleProvision.MXBleProvisionDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                       }
                     ],
@@ -3803,12 +3803,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleProvisionDelegate",
-                        "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                        "printedName": "MXBleProvision.MXBleProvisionDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                       }
                     ],
@@ -6027,12 +6027,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXBleProvisionDelegate",
-                    "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate",
                     "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                   }
                 ],
@@ -6425,12 +6425,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6470,12 +6470,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6522,12 +6522,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6618,12 +6618,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6669,12 +6669,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6720,12 +6720,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -7104,7 +7104,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?"
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?"
               }
             ],
             "declKind": "Var",
@@ -7130,12 +7130,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleProvisionDelegate",
-                        "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                        "printedName": "MXBleProvision.MXBleProvisionDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                       }
                     ],
@@ -7166,12 +7166,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleProvisionDelegate",
-                        "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                        "printedName": "MXBleProvision.MXBleProvisionDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                       }
                     ],
@@ -9390,12 +9390,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXBleProvisionDelegate",
-                    "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate",
                     "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                   }
                 ],
@@ -9860,12 +9860,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -9905,12 +9905,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -9957,12 +9957,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -10053,12 +10053,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -10104,12 +10104,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -10155,12 +10155,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -10532,7 +10532,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?"
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?"
               }
             ],
             "declKind": "Var",
@@ -10558,12 +10558,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleProvisionDelegate",
-                        "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                        "printedName": "MXBleProvision.MXBleProvisionDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                       }
                     ],
@@ -10594,12 +10594,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleProvisionDelegate",
-                        "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                        "printedName": "MXBleProvision.MXBleProvisionDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                       }
                     ],
@@ -12498,12 +12498,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXBleProvisionDelegate",
-                    "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate",
                     "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                   }
                 ],
@@ -13078,12 +13078,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -13123,12 +13123,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -13175,12 +13175,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -13271,12 +13271,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -13322,12 +13322,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -13373,12 +13373,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -14938,12 +14938,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXBleProvisionDelegate",
-                    "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate",
                     "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                   }
                 ],
@@ -15307,7 +15307,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?"
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?"
               }
             ],
             "declKind": "Var",
@@ -15333,12 +15333,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleProvisionDelegate",
-                        "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                        "printedName": "MXBleProvision.MXBleProvisionDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                       }
                     ],
@@ -15369,12 +15369,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "MXBleProvisionDelegate",
-                        "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                        "printedName": "MXBleProvision.MXBleProvisionDelegate",
                         "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                       }
                     ],
@@ -17447,12 +17447,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any MXBleProvision.MXBleProvisionDelegate)?",
+                "printedName": "MXBleProvision.MXBleProvisionDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "MXBleProvisionDelegate",
-                    "printedName": "any MXBleProvision.MXBleProvisionDelegate",
+                    "printedName": "MXBleProvision.MXBleProvisionDelegate",
                     "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate"
                   }
                 ],
@@ -17971,12 +17971,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -18016,12 +18016,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -18068,12 +18068,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -18164,12 +18164,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -18215,12 +18215,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -18266,12 +18266,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Swift.Error)?",
+                "printedName": "Swift.Error?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "any Swift.Error",
+                    "printedName": "Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -18501,7 +18501,6 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
-          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,

@@ -52,7 +52,7 @@
 // 3.发现mesh设备
 - (void)scanMeshDevices {
     NSLog(@"scanMeshDevices");
-    [MXBleProvisionManager.sharedInstance startScanWithTimeout:0 callback:^(NSArray<NSDictionary<NSString *,id> *> * _Nonnull devices, BOOL isStop) {
+    [MXBleProvisionManager.sharedInstance startScanWithTimeout:0 deviceType:0 callback:^(NSArray<NSDictionary<NSString *,id> *> * _Nonnull devices, BOOL isStop) {
         self.list = devices;
         [self.tableView reloadData];
     }];
