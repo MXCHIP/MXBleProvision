@@ -790,14 +790,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CBPeripheral",
-                "printedName": "CoreBluetooth.CBPeripheral",
-                "usr": "c:objc(cs)CBPeripheral"
+                "name": "Optional",
+                "printedName": "CoreBluetooth.CBPeripheral?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@MXBleProvision@objc(pl)MXBleDeviceLogDelegate(im)openDeviceLogFailWithPeripheral:",
-            "mangledName": "$s14MXBleProvision0A17DeviceLogDelegateP04opencD4Fail10peripheralySo12CBPeripheralC_tF",
+            "mangledName": "$s14MXBleProvision0A17DeviceLogDelegateP04opencD4Fail10peripheralySo12CBPeripheralCSg_tF",
             "moduleName": "MXBleProvision",
             "genericSig": "<τ_0_0 where τ_0_0 : MXBleProvision.MXBleDeviceLogDelegate>",
             "sugared_genericSig": "<Self where Self : MXBleProvision.MXBleDeviceLogDelegate>",
@@ -1693,6 +1701,42 @@
           },
           {
             "kind": "Function",
+            "name": "mxFogLog_reassemble",
+            "printedName": "mxFogLog_reassemble(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MXBleProvision26MXBluetoothProtocolHandlerC19mxFogLog_reassembley10Foundation4DataVSgAGF",
+            "mangledName": "$s14MXBleProvision26MXBluetoothProtocolHandlerC19mxFogLog_reassembley10Foundation4DataVSgAGF",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "mxYat_segment",
             "printedName": "mxYat_segment(_:toMtu:)",
             "children": [
@@ -1881,8 +1925,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MXBleLogManager",
-        "printedName": "MXBleLogManager",
+        "name": "MXFogBleLogManager",
+        "printedName": "MXFogBleLogManager",
         "children": [
           {
             "kind": "Var",
@@ -1891,14 +1935,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MXBleLogManager",
-                "printedName": "MXBleProvision.MXBleLogManager",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager"
+                "name": "MXFogBleLogManager",
+                "printedName": "MXBleProvision.MXFogBleLogManager",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(cpy)shard",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC5shardACvpZ",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(cpy)shard",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC5shardACvpZ",
             "moduleName": "MXBleProvision",
             "static": true,
             "declAttributes": [
@@ -1917,14 +1961,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MXBleLogManager",
-                    "printedName": "MXBleProvision.MXBleLogManager",
-                    "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager"
+                    "name": "MXFogBleLogManager",
+                    "printedName": "MXBleProvision.MXFogBleLogManager",
+                    "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(cm)shard",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC5shardACvgZ",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(cm)shard",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC5shardACvgZ",
                 "moduleName": "MXBleProvision",
                 "static": true,
                 "implicit": true,
@@ -1946,14 +1990,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "MXBleLogManager",
-                    "printedName": "MXBleProvision.MXBleLogManager",
-                    "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager"
+                    "name": "MXFogBleLogManager",
+                    "printedName": "MXBleProvision.MXFogBleLogManager",
+                    "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(cm)setShard:",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC5shardACvsZ",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(cm)setShard:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC5shardACvsZ",
                 "moduleName": "MXBleProvision",
                 "static": true,
                 "implicit": true,
@@ -1975,8 +2019,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXBleProvision0A10LogManagerC5shardACvMZ",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC5shardACvMZ",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC5shardACvMZ",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC5shardACvMZ",
                 "moduleName": "MXBleProvision",
                 "static": true,
                 "implicit": true,
@@ -2000,8 +2044,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(py)centralManager",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC07centralD0So09CBCentralD0Cvp",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)centralManager",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC07centralF0So09CBCentralF0Cvp",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2024,8 +2068,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)centralManager",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC07centralD0So09CBCentralD0Cvg",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)centralManager",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC07centralF0So09CBCentralF0Cvg",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2052,8 +2096,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)setCentralManager:",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC07centralD0So09CBCentralD0Cvs",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setCentralManager:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC07centralF0So09CBCentralF0Cvs",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2074,8 +2118,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXBleProvision0A10LogManagerC07centralD0So09CBCentralD0CvM",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC07centralD0So09CBCentralD0CvM",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC07centralF0So09CBCentralF0CvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC07centralF0So09CBCentralF0CvM",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2095,8 +2139,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(py)logDelegate",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC11logDelegateAA0a6DevicecF0_pSgvp",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)logDelegate",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC11logDelegateAA0a6DeviceeH0_pSgvp",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2130,8 +2174,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)logDelegate",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC11logDelegateAA0a6DevicecF0_pSgvg",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)logDelegate",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC11logDelegateAA0a6DeviceeH0_pSgvg",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2166,8 +2210,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)setLogDelegate:",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC11logDelegateAA0a6DevicecF0_pSgvs",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setLogDelegate:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC11logDelegateAA0a6DeviceeH0_pSgvs",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2188,8 +2232,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXBleProvision0A10LogManagerC11logDelegateAA0a6DevicecF0_pSgvM",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC11logDelegateAA0a6DevicecF0_pSgvM",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC11logDelegateAA0a6DeviceeH0_pSgvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC11logDelegateAA0a6DeviceeH0_pSgvM",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2218,8 +2262,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(py)connectPeripheral",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC17connectPeripheralSo12CBPeripheralCSgvp",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)connectPeripheral",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC17connectPeripheralSo12CBPeripheralCSgvp",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2250,8 +2294,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)connectPeripheral",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC17connectPeripheralSo12CBPeripheralCSgvg",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)connectPeripheral",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC17connectPeripheralSo12CBPeripheralCSgvg",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2286,8 +2330,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)setConnectPeripheral:",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC17connectPeripheralSo12CBPeripheralCSgvs",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setConnectPeripheral:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC17connectPeripheralSo12CBPeripheralCSgvs",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2308,8 +2352,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXBleProvision0A10LogManagerC17connectPeripheralSo12CBPeripheralCSgvM",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC17connectPeripheralSo12CBPeripheralCSgvM",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC17connectPeripheralSo12CBPeripheralCSgvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC17connectPeripheralSo12CBPeripheralCSgvM",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2338,8 +2382,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(py)dataInCharacteristic",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvp",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)dataInCharacteristic",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvp",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2370,8 +2414,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)dataInCharacteristic",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvg",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)dataInCharacteristic",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvg",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2406,8 +2450,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)setDataInCharacteristic:",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvs",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setDataInCharacteristic:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvs",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2428,8 +2472,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXBleProvision0A10LogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvM",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvM",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC20dataInCharacteristicSo16CBCharacteristicCSgvM",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2458,8 +2502,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(py)notifyCharacteristic",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvp",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)notifyCharacteristic",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvp",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2491,8 +2535,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)notifyCharacteristic",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvg",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)notifyCharacteristic",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvg",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2527,8 +2571,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)setNotifyCharacteristic:",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvs",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setNotifyCharacteristic:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvs",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2549,8 +2593,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXBleProvision0A10LogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvM",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvM",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC20notifyCharacteristicSo16CBCharacteristicCSgvM",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2571,8 +2615,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(py)isStart",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC7isStartSbvp",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)isStart",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC7isStartSbvp",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2596,8 +2640,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)isStart",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC7isStartSbvg",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)isStart",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC7isStartSbvg",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2624,8 +2668,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)setIsStart:",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC7isStartSbvs",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setIsStart:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC7isStartSbvs",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2646,8 +2690,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXBleProvision0A10LogManagerC7isStartSbvM",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC7isStartSbvM",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC7isStartSbvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC7isStartSbvM",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2668,8 +2712,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(py)isLogin",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC7isLoginSbvp",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)isLogin",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC7isLoginSbvp",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2693,8 +2737,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)isLogin",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC7isLoginSbvg",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)isLogin",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC7isLoginSbvg",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2721,8 +2765,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)setIsLogin:",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC7isLoginSbvs",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setIsLogin:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC7isLoginSbvs",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2743,8 +2787,457 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14MXBleProvision0A10LogManagerC7isLoginSbvM",
-                "mangledName": "$s14MXBleProvision0A10LogManagerC7isLoginSbvM",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC7isLoginSbvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC7isLoginSbvM",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pk",
+            "printedName": "pk",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)pk",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC2pkSSSgvp",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)pk",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC2pkSSSgvg",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setPk:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC2pkSSSgvs",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC2pkSSSgvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC2pkSSSgvM",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dn",
+            "printedName": "dn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)dn",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC2dnSSSgvp",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)dn",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC2dnSSSgvg",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setDn:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC2dnSSSgvs",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC2dnSSSgvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC2dnSSSgvM",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "workItem",
+            "printedName": "workItem",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchWorkItem?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchWorkItem",
+                    "printedName": "Dispatch.DispatchWorkItem",
+                    "usr": "s:8Dispatch0A8WorkItemC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MXBleProvision18MXFogBleLogManagerC8workItem8Dispatch0i4WorkH0CSgvp",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC8workItem8Dispatch0i4WorkH0CSgvp",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Dispatch.DispatchWorkItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DispatchWorkItem",
+                        "printedName": "Dispatch.DispatchWorkItem",
+                        "usr": "s:8Dispatch0A8WorkItemC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC8workItem8Dispatch0i4WorkH0CSgvg",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC8workItem8Dispatch0i4WorkH0CSgvg",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Dispatch.DispatchWorkItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DispatchWorkItem",
+                        "printedName": "Dispatch.DispatchWorkItem",
+                        "usr": "s:8Dispatch0A8WorkItemC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC8workItem8Dispatch0i4WorkH0CSgvs",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC8workItem8Dispatch0i4WorkH0CSgvs",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC8workItem8Dispatch0i4WorkH0CSgvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC8workItem8Dispatch0i4WorkH0CSgvM",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectTimeout",
+            "printedName": "connectTimeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(py)connectTimeout",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC14connectTimeoutSdvp",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)connectTimeout",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC14connectTimeoutSdvg",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)setConnectTimeout:",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC14connectTimeoutSdvs",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision18MXFogBleLogManagerC14connectTimeoutSdvM",
+                "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC14connectTimeoutSdvM",
                 "moduleName": "MXBleProvision",
                 "implicit": true,
                 "isOpen": true,
@@ -2759,21 +3252,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MXBleLogManager",
-                "printedName": "MXBleProvision.MXBleLogManager",
-                "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager"
+                "name": "MXFogBleLogManager",
+                "printedName": "MXBleProvision.MXFogBleLogManager",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)init",
-            "mangledName": "$s14MXBleProvision0A10LogManagerCACycfc",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)init",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerCACycfc",
             "moduleName": "MXBleProvision",
             "overriding": true,
             "objc_name": "init",
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Override"
+              "Override",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -2795,8 +3289,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)send:error:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC4sendyy10Foundation4DataVKF",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)send:error:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC4sendyy10Foundation4DataVKF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2817,8 +3311,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)sendNextPacket",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC14sendNextPacketyyF",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)sendNextPacket",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC14sendNextPacketyyF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2838,8 +3332,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)discoverServices",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC16discoverServicesyyF",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)discoverServices",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC16discoverServicesyyF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2866,8 +3360,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager(im)discoverCharacteristicsFor:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC23discoverCharacteristics3forySo9CBServiceC_tF",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager(im)discoverCharacteristicsFor:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC23discoverCharacteristics3forySo9CBServiceC_tF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2878,7 +3372,7 @@
           {
             "kind": "Function",
             "name": "openDeviceLog",
-            "printedName": "openDeviceLog(peripheral:delegate:)",
+            "printedName": "openDeviceLog(peripheral:productKey:deviceName:timeout:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2887,9 +3381,37 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CBPeripheral",
-                "printedName": "CoreBluetooth.CBPeripheral",
-                "usr": "c:objc(cs)CBPeripheral"
+                "name": "Optional",
+                "printedName": "CoreBluetooth.CBPeripheral?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               },
               {
                 "kind": "TypeNominal",
@@ -2907,8 +3429,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)openDeviceLogWithPeripheral:delegate:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC010openDeviceC010peripheral8delegateySo12CBPeripheralC_AA0afC8Delegate_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)openDeviceLogWithPeripheral:productKey:deviceName:timeout:delegate:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC010openDeviceE010peripheral10productKey10deviceName7timeout8delegateySo12CBPeripheralCSg_S2SSiAA0ahE8Delegate_pSgtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2932,8 +3454,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)closeDeviceLog",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC011closeDeviceC0yyF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)closeDeviceLog",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC011closeDeviceE0yyF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -2963,14 +3485,83 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)sendCliMsgWithCmd:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC10sendCliMsg3cmdySS_tF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)sendCliMsgWithCmd:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC10sendCliMsg3cmdySS_tF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
               "Dynamic",
               "AccessControl",
               "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createTimeout",
+            "printedName": "createTimeout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)createTimeout",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC13createTimeoutyyF",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startScan",
+            "printedName": "startScan()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)startScan",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC9startScanyyF",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScan",
+            "printedName": "stopScan()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)stopScan",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC8stopScanyyF",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -2994,11 +3585,73 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)centralManagerDidUpdateState:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC07centralD14DidUpdateStateyySo09CBCentralD0CF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)centralManagerDidUpdateState:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC07centralF14DidUpdateStateyySo09CBCentralF0CF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "centralManagerDidUpdateState:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didDiscover:advertisementData:rssi:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC07centralF0_11didDiscover17advertisementData4rssiySo09CBCentralF0C_So12CBPeripheralCSDySSypGSo8NSNumberCtF",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "objc_name": "centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -3031,8 +3684,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)centralManager:didConnectPeripheral:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC07centralD0_10didConnectySo09CBCentralD0C_So12CBPeripheralCtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)centralManager:didConnectPeripheral:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC07centralF0_10didConnectySo09CBCentralF0C_So12CBPeripheralCtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "centralManager:didConnectPeripheral:",
@@ -3082,8 +3735,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)centralManager:didFailToConnectPeripheral:error:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC07centralD0_16didFailToConnect5errorySo09CBCentralD0C_So12CBPeripheralCs5Error_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)centralManager:didFailToConnectPeripheral:error:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC07centralF0_16didFailToConnect5errorySo09CBCentralF0C_So12CBPeripheralCs5Error_pSgtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "centralManager:didFailToConnectPeripheral:error:",
@@ -3127,8 +3780,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)peripheral:didDiscoverServices:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC10peripheral_19didDiscoverServicesySo12CBPeripheralC_s5Error_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)peripheral:didDiscoverServices:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC10peripheral_19didDiscoverServicesySo12CBPeripheralC_s5Error_pSgtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "peripheral:didDiscoverServices:",
@@ -3179,8 +3832,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)peripheral:didDiscoverCharacteristicsForService:error:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC10peripheral_29didDiscoverCharacteristicsFor5errorySo12CBPeripheralC_So9CBServiceCs5Error_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)peripheral:didDiscoverCharacteristicsForService:error:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC10peripheral_29didDiscoverCharacteristicsFor5errorySo12CBPeripheralC_So9CBServiceCs5Error_pSgtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "peripheral:didDiscoverCharacteristicsForService:error:",
@@ -3224,8 +3877,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)peripheral:didModifyServices:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC10peripheral_17didModifyServicesySo12CBPeripheralC_SaySo9CBServiceCGtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)peripheral:didModifyServices:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC10peripheral_17didModifyServicesySo12CBPeripheralC_SaySo9CBServiceCGtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "peripheral:didModifyServices:",
@@ -3275,8 +3928,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)peripheral:didUpdateNotificationStateForCharacteristic:error:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC10peripheral_29didUpdateNotificationStateFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)peripheral:didUpdateNotificationStateForCharacteristic:error:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC10peripheral_29didUpdateNotificationStateFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "peripheral:didUpdateNotificationStateForCharacteristic:error:",
@@ -3326,8 +3979,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)peripheral:didUpdateValueForCharacteristic:error:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC10peripheral_17didUpdateValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)peripheral:didUpdateValueForCharacteristic:error:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC10peripheral_17didUpdateValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "peripheral:didUpdateValueForCharacteristic:error:",
@@ -3377,8 +4030,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)peripheral:didWriteValueForCharacteristic:error:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC10peripheral_16didWriteValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)peripheral:didWriteValueForCharacteristic:error:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC10peripheral_16didWriteValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "peripheral:didWriteValueForCharacteristic:error:",
@@ -3408,8 +4061,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXBleLogManager(im)peripheralIsReadyToSendWriteWithoutResponse:",
-            "mangledName": "$s14MXBleProvision0A10LogManagerC17peripheralIsReady26toSendWriteWithoutResponseySo12CBPeripheralC_tF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogBleLogManager(im)peripheralIsReadyToSendWriteWithoutResponse:",
+            "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC17peripheralIsReady26toSendWriteWithoutResponseySo12CBPeripheralC_tF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "objc_name": "peripheralIsReadyToSendWriteWithoutResponse:",
@@ -3424,8 +4077,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@MXBleProvision@objc(cs)MXBleLogManager",
-        "mangledName": "$s14MXBleProvision0A10LogManagerC",
+        "usr": "c:@M@MXBleProvision@objc(cs)MXFogBleLogManager",
+        "mangledName": "$s14MXBleProvision18MXFogBleLogManagerC",
         "moduleName": "MXBleProvision",
         "isOpen": true,
         "declAttributes": [
@@ -6071,6 +6724,7 @@
             "isOpen": true,
             "declAttributes": [
               "Dynamic",
+              "AccessControl",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -9434,6 +10088,7 @@
             "isOpen": true,
             "declAttributes": [
               "Dynamic",
+              "AccessControl",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -10640,6 +11295,120 @@
           },
           {
             "kind": "Var",
+            "name": "log_delegate",
+            "printedName": "log_delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "MXBleProvision.MXBleDeviceLogDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(py)log_delegate",
+            "mangledName": "$s14MXBleProvision05MXFogB7ManagerC12log_delegateAA0A17DeviceLogDelegate_pSgvp",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MXBleProvision.MXBleDeviceLogDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXBleDeviceLogDelegate",
+                        "printedName": "MXBleProvision.MXBleDeviceLogDelegate",
+                        "usr": "c:@M@MXBleProvision@objc(pl)MXBleDeviceLogDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(im)log_delegate",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC12log_delegateAA0A17DeviceLogDelegate_pSgvg",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MXBleProvision.MXBleDeviceLogDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MXBleDeviceLogDelegate",
+                        "printedName": "MXBleProvision.MXBleDeviceLogDelegate",
+                        "usr": "c:@M@MXBleProvision@objc(pl)MXBleDeviceLogDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(im)setLog_delegate:",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC12log_delegateAA0A17DeviceLogDelegate_pSgvs",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision05MXFogB7ManagerC12log_delegateAA0A17DeviceLogDelegate_pSgvM",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC12log_delegateAA0A17DeviceLogDelegate_pSgvM",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "productKey",
             "printedName": "productKey",
             "children": [
@@ -11097,6 +11866,345 @@
           },
           {
             "kind": "Var",
+            "name": "log_dataIn",
+            "printedName": "log_dataIn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreBluetooth.CBCharacteristic?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBCharacteristic",
+                    "printedName": "CoreBluetooth.CBCharacteristic",
+                    "usr": "c:objc(cs)CBCharacteristic"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(py)log_dataIn",
+            "mangledName": "$s14MXBleProvision05MXFogB7ManagerC10log_dataInSo16CBCharacteristicCSgvp",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreBluetooth.CBCharacteristic?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CBCharacteristic",
+                        "printedName": "CoreBluetooth.CBCharacteristic",
+                        "usr": "c:objc(cs)CBCharacteristic"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(im)log_dataIn",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC10log_dataInSo16CBCharacteristicCSgvg",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreBluetooth.CBCharacteristic?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CBCharacteristic",
+                        "printedName": "CoreBluetooth.CBCharacteristic",
+                        "usr": "c:objc(cs)CBCharacteristic"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(im)setLog_dataIn:",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC10log_dataInSo16CBCharacteristicCSgvs",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision05MXFogB7ManagerC10log_dataInSo16CBCharacteristicCSgvM",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC10log_dataInSo16CBCharacteristicCSgvM",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "log_dataOut",
+            "printedName": "log_dataOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreBluetooth.CBCharacteristic?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBCharacteristic",
+                    "printedName": "CoreBluetooth.CBCharacteristic",
+                    "usr": "c:objc(cs)CBCharacteristic"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(py)log_dataOut",
+            "mangledName": "$s14MXBleProvision05MXFogB7ManagerC11log_dataOutSo16CBCharacteristicCSgvp",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreBluetooth.CBCharacteristic?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CBCharacteristic",
+                        "printedName": "CoreBluetooth.CBCharacteristic",
+                        "usr": "c:objc(cs)CBCharacteristic"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(im)log_dataOut",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC11log_dataOutSo16CBCharacteristicCSgvg",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreBluetooth.CBCharacteristic?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CBCharacteristic",
+                        "printedName": "CoreBluetooth.CBCharacteristic",
+                        "usr": "c:objc(cs)CBCharacteristic"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(im)setLog_dataOut:",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC11log_dataOutSo16CBCharacteristicCSgvs",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision05MXFogB7ManagerC11log_dataOutSo16CBCharacteristicCSgvM",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC11log_dataOutSo16CBCharacteristicCSgvM",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "log_isLogin",
+            "printedName": "log_isLogin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(py)log_isLogin",
+            "mangledName": "$s14MXBleProvision05MXFogB7ManagerC11log_isLoginSbvp",
+            "moduleName": "MXBleProvision",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(im)log_isLogin",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC11log_isLoginSbvg",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MXBleProvision@objc(cs)MXFogProvisionManager(im)setLog_isLogin:",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC11log_isLoginSbvs",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MXBleProvision05MXFogB7ManagerC11log_isLoginSbvM",
+                "mangledName": "$s14MXBleProvision05MXFogB7ManagerC11log_isLoginSbvM",
+                "moduleName": "MXBleProvision",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "timer",
             "printedName": "timer",
             "children": [
@@ -11123,7 +12231,6 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -12454,7 +13561,7 @@
           {
             "kind": "Function",
             "name": "provisionDevice",
-            "printedName": "provisionDevice(peripheral:productKey:deviceName:timeout:delegate:)",
+            "printedName": "provisionDevice(peripheral:productKey:deviceName:timeout:delegate:logDelegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12508,11 +13615,26 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MXBleProvision.MXBleDeviceLogDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MXBleDeviceLogDelegate",
+                    "printedName": "MXBleProvision.MXBleDeviceLogDelegate",
+                    "usr": "c:@M@MXBleProvision@objc(pl)MXBleDeviceLogDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogProvisionManager(im)provisionDeviceWithPeripheral:productKey:deviceName:timeout:delegate:",
-            "mangledName": "$s14MXBleProvision05MXFogB7ManagerC15provisionDevice10peripheral10productKey10deviceName7timeout8delegateySo12CBPeripheralCSg_S2SSiAA0aB8Delegate_pSgtF",
+            "usr": "c:@CM@MXBleProvision@objc(cs)MXFogProvisionManager(im)provisionDeviceWithPeripheral:productKey:deviceName:timeout:delegate:logDelegate:",
+            "mangledName": "$s14MXBleProvision05MXFogB7ManagerC15provisionDevice10peripheral10productKey10deviceName7timeout8delegate11logDelegateySo12CBPeripheralCSg_S2SSiAA0abO0_pSgAA0af3LogO0_pSgtF",
             "moduleName": "MXBleProvision",
             "isOpen": true,
             "declAttributes": [
@@ -12542,6 +13664,7 @@
             "isOpen": true,
             "declAttributes": [
               "Dynamic",
+              "AccessControl",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -17491,6 +18614,7 @@
             "isOpen": true,
             "declAttributes": [
               "Dynamic",
+              "AccessControl",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -19467,37 +20591,51 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionHander.swift",
       "kind": "IntegerLiteral",
-      "offset": 1431,
+      "offset": 1465,
       "length": 4,
       "value": "0x02"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleLogManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogBleLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 284,
+      "offset": 290,
       "length": 16,
       "value": "\"com.mxBle.lock\""
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleLogManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogBleLogManager.swift",
       "kind": "Array",
-      "offset": 334,
+      "offset": 340,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleLogManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogBleLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 638,
+      "offset": 707,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleLogManager.swift",
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogBleLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 684,
+      "offset": 753,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogBleLogManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 885,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogBleLogManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2880,
+      "length": 2,
+      "value": "15"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
@@ -19565,7 +20703,7 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4771,
+      "offset": 4772,
       "length": 2,
       "value": "30"
     },
@@ -19635,7 +20773,7 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4805,
+      "offset": 4806,
       "length": 2,
       "value": "30"
     },
@@ -19656,56 +20794,63 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "StringLiteral",
-      "offset": 613,
+      "offset": 671,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 956,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 821,
+      "offset": 1012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 850,
+      "offset": 1041,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 909,
+      "offset": 1100,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 955,
+      "offset": 1146,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1130,
+      "offset": 1321,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1604,
+      "offset": 1795,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5987,
+      "offset": 6436,
       "length": 2,
       "value": "30"
     },
@@ -19740,21 +20885,21 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1199,
+      "offset": 1345,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1220,
+      "offset": 1366,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXBleProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10200,
+      "offset": 10811,
       "length": 2,
       "value": "30"
     },
@@ -19838,14 +20983,14 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXYatProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6800,
+      "offset": 6801,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXYatProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6848,
+      "offset": 6849,
       "length": 1,
       "value": "4"
     }

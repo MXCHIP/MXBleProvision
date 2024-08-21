@@ -9,7 +9,7 @@
 #import "MXBleProvision/MXBleProvision-Swift.h"
 @import CryptoSwift;
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource, MXBleProvisionDelegate>
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource, MXBleProvisionDelegate, MXBleDeviceLogDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *list;
@@ -97,13 +97,7 @@
         NSString *dn = info[@"deviceName"];
         CBPeripheral *peripheral = info[@"peripheral"];
         
-        [MXBleProvisionManager startProvisionWithType:3
-                                           peripheral:peripheral
-                                           productKey:pk
-                                     deviceIdentifier:dn
-                                            productId:nil
-                                              timeout:30
-                                             delegate:self];
+        [MXFogProvisionManager.shard provisionDeviceWithPeripheral:peripheral productKey:pk deviceName:dn timeout:30 delegate:self logDelegate:self];
     }
 }
 
@@ -123,7 +117,7 @@
                                      error:(NSError *)error
                                device_name:(NSString *)device_name
 {
-    [MXBleProvisionManager cleanProvisionCache];
+    [MXFogProvisionManager.shard cleanProvisionCache];
     if (error != nil) {
         NSLog(@"失败原因：%@", error);
     } else {
@@ -141,5 +135,19 @@
     //轮询设备连接状态，调用API返回结果
     handler(NO);
 }
+
+
+- (void)openDeviceLogFailWithPeripheral:(CBPeripheral *)peripheral {
+    
+}
+
+- (void)openDeviceLogSuccessWithPeripheral:(CBPeripheral *)peripheral {
+    
+}
+
+- (void)receiveDeviceLogWithPeripheral:(CBPeripheral *)peripheral log:(NSString *)log {
+    NSLog(@"收到设备日志：%@", log);
+}
+
 
 @end
