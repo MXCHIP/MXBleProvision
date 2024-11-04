@@ -21,7 +21,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public protocol MXBleProvisionDelegate {
-  @objc optional func inputWifiInfo(handler: @escaping ((_ ssid: Swift.String, _ password: Swift.String, _ customParams: [Swift.String : Any]?) -> Swift.Void))
+  @objc optional func inputWifiInfo(handler: @escaping ((_ ssid: Swift.String, _ password: Swift.String?, _ customParams: [Swift.String : Any]?) -> Swift.Void))
   @objc optional func mxBleProvisionFinish(productKey: Swift.String, deviceIdentifier: Swift.String, error: Foundation.NSError?, device_name: Swift.String?)
   @objc optional func requestBleKey(params: [Swift.String : Any]?, type: Swift.Int, handler: @escaping ((_ cipher: Swift.String?) -> Swift.Void))
   @objc optional func requestConnectStatus(params: [Swift.String : Any]?, type: Swift.Int, handler: @escaping ((_ connectStatus: Swift.Bool) -> Swift.Void))

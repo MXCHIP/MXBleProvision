@@ -318,7 +318,7 @@ SWIFT_PROTOCOL("_TtP14MXBleProvision22MXBleDeviceLogDelegate_")
 SWIFT_PROTOCOL("_TtP14MXBleProvision22MXBleProvisionDelegate_")
 @protocol MXBleProvisionDelegate
 @optional
-- (void)inputWifiInfoWithHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull, NSDictionary<NSString *, id> * _Nullable))handler;
+- (void)inputWifiInfoWithHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nullable, NSDictionary<NSString *, id> * _Nullable))handler;
 - (void)mxBleProvisionFinishWithProductKey:(NSString * _Nonnull)productKey deviceIdentifier:(NSString * _Nonnull)deviceIdentifier error:(NSError * _Nullable)error device_name:(NSString * _Nullable)device_name;
 - (void)requestBleKeyWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler;
 - (void)requestConnectStatusWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(BOOL))handler;

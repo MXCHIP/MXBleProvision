@@ -339,7 +339,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.String, Swift.String, [Swift.String : Any]?) -> ()",
+                "printedName": "(Swift.String, Swift.String?, [Swift.String : Any]?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -349,7 +349,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.String, Swift.String, [Swift.String : Any]?)",
+                    "printedName": "(Swift.String, Swift.String?, [Swift.String : Any]?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -359,9 +359,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
                       },
                       {
                         "kind": "TypeNominal",
@@ -397,7 +405,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@MXBleProvision@objc(pl)MXBleProvisionDelegate(im)inputWifiInfoWithHandler:",
-            "mangledName": "$s14MXBleProvision0aB8DelegateP13inputWifiInfo7handleryySS_SSSDySSypGSgtc_tF",
+            "mangledName": "$s14MXBleProvision0aB8DelegateP13inputWifiInfo7handleryySS_SSSgSDySSypGSgtc_tF",
             "moduleName": "MXBleProvision",
             "genericSig": "<τ_0_0 where τ_0_0 : MXBleProvision.MXBleProvisionDelegate>",
             "sugared_genericSig": "<Self where Self : MXBleProvision.MXBleProvisionDelegate>",
@@ -20726,7 +20734,7 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXLivingProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4772,
+      "offset": 4741,
       "length": 2,
       "value": "30"
     },
@@ -20796,7 +20804,7 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXTMallProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4806,
+      "offset": 4775,
       "length": 2,
       "value": "30"
     },
@@ -20873,7 +20881,7 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXFogProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6436,
+      "offset": 6490,
       "length": 2,
       "value": "30"
     },
@@ -21006,14 +21014,14 @@
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXYatProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6801,
+      "offset": 6909,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/huafeng\/Desktop\/mx_git\/mxapp_ios\/MXApp\/MXBleProvision\/MXBleProvision\/MXYatProvisionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6849,
+      "offset": 6957,
       "length": 1,
       "value": "4"
     }
