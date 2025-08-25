@@ -103,7 +103,7 @@
 
 #pragma  mark -----------------------
 
-- (void)inputWifiInfoWithHandler:(void (^)(NSString * _Nonnull, NSString * _Nonnull, NSDictionary<NSString *,id> * _Nullable))handler
+- (void)inputWifiInfoWithHandler:(void (^)(NSString * _Nonnull, NSString * _Nullable, NSDictionary<NSString *,id> * _Nullable))handler
 {
     NSMutableDictionary *custom = [[NSMutableDictionary alloc] init];
     custom[@"htturl"] = @"app.api.fogcloud.io";
@@ -111,7 +111,6 @@
     handler(@"mxchip-guest", @"12345678", custom);
 }
 
-//配网结束
 - (void)mxBleProvisionFinishWithProductKey:(NSString *)productKey
                           deviceIdentifier:(NSString *)deviceIdentifier
                                      error:(NSError *)error
@@ -124,18 +123,30 @@
         //配网成功
     }
 }
+
+//请求随机数
+- (void)requestRandomWithParams:(NSDictionary<NSString *,id> *)params
+                           type:(NSInteger)type
+                        handler:(void (^)(NSString * _Nullable))handler {
+    //调用API云端生成
+    handler(@"AAAAAAAAAAAAAAAA");
+}
+
 //请求blekey
-- (void)requestBleKeyWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(NSString * _Nullable))handler
+- (void)requestBleKeyWithParams:(NSDictionary<NSString *,id> *)params
+                           type:(NSInteger)type
+                        handler:(void (^)(NSString * _Nullable))handler
 {
     //返回blekey，调用API云端生成
     handler(@"AAAAAAAAAAAAAAAA");
 }
-- (void)requestConnectStatusWithParams:(NSDictionary<NSString *, id> * _Nullable)params type:(NSInteger)type handler:(void (^ _Nonnull)(BOOL))handler
+- (void)requestConnectStatusWithParams:(NSDictionary<NSString *,id> *)params
+                                  type:(NSInteger)type
+                               handler:(void (^)(BOOL))handler
 {
     //轮询设备连接状态，调用API返回结果
     handler(NO);
 }
-
 
 - (void)openDeviceLogFailWithPeripheral:(CBPeripheral *)peripheral {
     
