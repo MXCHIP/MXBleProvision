@@ -23,7 +23,5 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.vendored_frameworks = 'MXBleProvision.framework'
   
-  s.dependency 'CryptoSwift'
-  
   
 end

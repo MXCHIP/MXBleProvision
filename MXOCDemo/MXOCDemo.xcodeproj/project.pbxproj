@@ -116,7 +116,6 @@
 				DC4D52D72BBD27FC00A53E34 /* Sources */,
 				DC4D52D82BBD27FC00A53E34 /* Frameworks */,
 				DC4D52D92BBD27FC00A53E34 /* Resources */,
-				44A4E57FDA906428323EED55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,23 +173,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44A4E57FDA906428323EED55 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MXOCDemo/Pods-MXOCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MXOCDemo/Pods-MXOCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MXOCDemo/Pods-MXOCDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		75B3B1D644CA1D9AD451D900 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

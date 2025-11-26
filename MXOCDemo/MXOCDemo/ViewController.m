@@ -7,7 +7,6 @@
 
 #import "ViewController.h"
 #import "MXBleProvision/MXBleProvision-Swift.h"
-@import CryptoSwift;
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource, MXBleProvisionDelegate, MXBleDeviceLogDelegate>
 
