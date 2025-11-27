@@ -135,7 +135,7 @@ struct FoundDevicesView: View {
     
     // MARK: - 扫描设备
     func startScanDevice() {
-        MXFogProvisionManager.shard.stopScan()
+        MXBleProvisionManager.sharedInstance.stopScan()
         dataList.removeAll()
         showNextButton = false
         headerText = nil

@@ -206,15 +206,24 @@ class ProvisionDelegate: NSObject, MXBleProvisionDelegate {
     init(provisionFinishHandler: @escaping (String, String, NSError?, String?) -> Void) {
         self.provisionFinishHandler = provisionFinishHandler
     }
-    
+    /*
+     请求随机数,一般由云端实现，可以不实现这个delegate func,不实现func，内部会自动生成
+     @params：{product_key: String; device_name: String}
+     @result: String?
+     */
     @objc func requestRandom(params: [String : Any]?, type: Int, handler: @escaping (String?) -> Void) {
+        //模拟调用SDK内部实现的func生成随机数传入
         if let randomStr = MXFogProvisionManager.shard.createRandom() {
             handler(randomStr)
         }
     }
-    
+    /*
+     请求ble加密密钥，一般由云端实现
+     @params: {product_key: String; device_name: String; cipher:String; random: String}
+     @result: String?
+    */
     @objc func requestBleKey(params: [String : Any]?, type: Int, handler: @escaping (String?) -> Void) {
-        //通过调用云端的API，返回bleKey，或者使用下面的离线方式
+        //模拟实现本地存储了设备信息，通过deviceSecret生成bleKey
         if let dn = params?["device_name"] as? String,
            let pk = params?["product_key"] as? String {
             //通过pk+dn，找到设备的ds
@@ -224,7 +233,12 @@ class ProvisionDelegate: NSObject, MXBleProvisionDelegate {
             }
         }
     }
-    
+    /*
+     输入Wi-Fi信息
+     @ssid
+     @password
+     @customParams: 自定义参数，主要传入设备连接的iot平台域名
+    */
     @objc func inputWifiInfo(handler: @escaping (String, String?, [String : Any]?) -> Void) {
         self.requestNum = 0
         var customParams = [String: Any]()
@@ -232,14 +246,24 @@ class ProvisionDelegate: NSObject, MXBleProvisionDelegate {
         customParams["httpurl"] = "app.mqtt.fogcloud.io"
         handler("AP106", "12345678", customParams)
     }
-    
+    /*
+     配网结束
+     @productKey
+     @deviceIdentifier
+     @error
+     @device_name
+     */
     @objc func mxBleProvisionFinish(productKey: String, deviceIdentifier: String, error: NSError?, device_name: String?) {
         print("配网结束：\(String(describing: error))")
         self.provisionFinishHandler(productKey, deviceIdentifier, error, device_name)
     }
-    
+    /*
+     云端轮训设备连接状态
+     @params: {product_key: String; device_name: String; random: String}
+     @result: Bool
+    */
     @objc func requestConnectStatus(params: [String : Any]?, type: Int, handler: @escaping (Bool) -> Void) {
-        //云端轮训设备连接状态, 下面为模拟轮询3次之后，设备连接成功的状态
+        //模拟轮询3次之后，设备连接成功
         self.requestNum += 1
         if self.requestNum > 3 {
             handler(true)
